@@ -1,0 +1,182 @@
+/*-----------------------------------
+BASIC
+font-family: 'Raleway', sans-serif;
+img size 700x
+
+------------------------------------*/
+
+html { overflow-y: scroll; }
+
+/*-----------------------------------
+MEDIA QUERIES
+------------------------------------*/
+
+@media only screen and (max-width: 1199px) {
+    h1{
+        text-align: center;  
+        margin-bottom: -15px;
+    }
+    #isotope-filters {
+       width: 100%;
+       text-align: center; 
+    }
+    
+    #isotope-container [class*=col-]{
+        padding-bottom: 20px;
+    }
+    .end{
+        margin-top: -30px;
+    }
+    
+}
+
+/*-----------------------------------
+TESTATA
+------------------------------------*/
+
+.main-title{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 400;
+}
+
+.head{
+    margin-bottom: 35px;
+}
+
+
+/* PORTFOLIO */
+
+#isotope-container{
+    overflow:hidden;
+}
+
+.row.no-space [class*=col-]{
+    padding: 0;  
+}
+
+#isotope-filters{
+  padding-top: 36px;
+  float: right;
+}
+
+#isotope-filters button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background-color: transparent; 
+    outline: 0;
+   
+}
+
+#isotope-filters button span{
+    display: block;
+    padding-bottom: 5px;
+    
+}
+
+#isotope-filters button.active span{
+    color: #75BA43;
+    border-bottom: 3px solid #75BA43;  
+}
+
+.portfolio-item{
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img{
+    width: 100%;
+    height: auto;
+    -webkit-transition: -webkit-transform .5s ease;transition: -webkit-transform .5s ease;transition: transform .5s ease;transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.portfolio-item:hover img{
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1); 
+}
+
+.portfolio-item-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14, 14, 17, 0.9);
+    cursor: -webkit-zoom-in;cursor: zoom-in;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.portfolio-item-details{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);transform: translateY(-50%);
+}
+
+.portfolio-item-details h3{
+    color: #75BA43;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    backface-visibility: hidden;
+    -webkit-transform: translateY(-15%);transform: translateY(-15%);
+}
+
+.portfolio-item-details span{
+    display: inline-block;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    height: 6px;
+    width: 30px;
+    margin: 11px auto 5px auto;
+}
+
+.portfolio-item-details p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    backface-visibility: hidden;
+    -webkit-transform: translateY(50%);transform: translateY(50%);
+    transition: all 0.5s;
+}
+
+.portfolio-item:hover .portfolio-item-details h3{  
+    -webkit-transform: translateY(0);transform: translateY(0);
+     transition: all 0.5s;
+       
+}
+
+.portfolio-item:hover .portfolio-item-details p{
+     backface-visibility: hidden;
+    -webkit-transform: translateY(0);transform: translateY(0);  
+}
+
+.portfolio-item:hover .portfolio-item-overlay{
+    opacity: 1;
+}
+
+/* footer */
+
+footer{
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #D5D8DC;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
